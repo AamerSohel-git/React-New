@@ -1,12 +1,19 @@
 import React,{useContext} from 'react';
-import {DataContext} from "./UseContext"
+import {TestContext, UserContext} from "./UseContext"
 
 const FifthChild = () => {
-    const data = useContext(DataContext);
+    const test = useContext(TestContext);
+    const user = useContext(UserContext);
     return (
-        <div>
-            <p>I am fifth child of: {data} </p>
-        </div>
+        <>
+        <div>FifthChild</div>
+        <p>User:{user}</p>
+        {test.map((item,index)=>{
+            return (
+                <li key={index}>{item.name}</li>
+            )
+        })}
+        </>
     );
 };
 

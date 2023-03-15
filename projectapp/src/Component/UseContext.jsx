@@ -1,18 +1,26 @@
 import React,{createContext} from 'react';
 import FirstChild from './FirstChild';
 
-export const DataContext = createContext();
+export  const TestContext = createContext();
+export  const UserContext = createContext();
 
 const UseContext = () => {
-    const data = "useContext hook";
-
+    const test = [
+        {name:"first Name",type:"text"},
+        {name:"middel Name",type:"text"},
+        {name:"Last Name",type:"text"}
+    ]
+    const user ="manahil8551@gmail.com"
     return (
         <div>
+            
             <h1>React Hook: useContext()</h1>
             <p>This hook is used to manage or share the state between deeply nested components</p>
-            <DataContext.Provider value={data}>
+            <UserContext.Provider value={user}>
+            <TestContext.Provider value={test}>
             <FirstChild/>
-            </DataContext.Provider>
+            </TestContext.Provider>
+            </UserContext.Provider>
  
         </div>
     );
