@@ -1,9 +1,9 @@
 import './App.css';
-import ComplexCount from './Component/ComplexCount';
-import { Switch } from './Component/Switch';
-import TextFields from './Component/TextFields';
-import ToDoList from './Component/ToDoList';
-import UseContext from './Component/UseContext';
+import ComplexCount from './Component/useState/ComplexCount';
+import { Switch } from './Component/useState/Switch';
+import TextFields from './Component/useState/TextFields';
+import ToDoList from './Component/useState/ToDoList';
+import UseContext from './Component/useContext/UseContext';
 
 function App() {
   return (
@@ -11,8 +11,8 @@ function App() {
       {/* <UseContext/> */}
       {/* <Switch/> */}
       {/* <ComplexCount/> */}
-      <ToDoList/>
       {/* <TextFields/> */}
+      <ToDoList/>
     </div>
   );
 }
