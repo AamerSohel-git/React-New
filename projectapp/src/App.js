@@ -1,4 +1,5 @@
 import './App.css';
+import AsyncAwait from './Component/useEffect/AsyncAwait';
 import { DataFetch } from './Component/useEffect/DataFetch';
 import { DataFetchOnMount } from './Component/useEffect/DataFetchOnMount';
 import FetchProducts from './Component/useEffect/FetchProducts';
@@ -28,7 +29,8 @@ function App() {
       {/* <DataFetch/> */}
       {/* <UsingAxios/> */}
       {/* <DataFetchOnMount/> */}
-      <FetchProducts/>
+      {/* <FetchProducts/> */}
+      <AsyncAwait/>
     </div>
   );
 }
