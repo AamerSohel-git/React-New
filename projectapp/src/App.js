@@ -1,4 +1,8 @@
 import './App.css';
+import { DataFetch } from './Component/useEffect/DataFetch';
+import { DataFetchOnMount } from './Component/useEffect/DataFetchOnMount';
+import FetchProducts from './Component/useEffect/FetchProducts';
+import { UsingAxios } from './Component/useEffect/UsingAxios';
 // import ComplexCount from './Component/useState/ComplexCount';
 // import { Switch } from './Component/useState/Switch';
 // import TextFields from './Component/useState/TextFields';
@@ -20,7 +24,11 @@ function App() {
       {/* <ParentComp/> */}
       {/* <NestedParent/> */}
       {/* <Parent/> */}
-      <UseRefHook/>
+      {/* <UseRefHook/> */}
+      {/* <DataFetch/> */}
+      {/* <UsingAxios/> */}
+      {/* <DataFetchOnMount/> */}
+      <FetchProducts/>
     </div>
   );
 }
