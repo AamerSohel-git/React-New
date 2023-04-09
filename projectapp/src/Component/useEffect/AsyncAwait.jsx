@@ -80,8 +80,8 @@ const AsyncAwait = () => {
         {platziProd.length > 0 &&
           platziProd.map((item, index) => {
             return (
-              <Grid item xs={4}>
-                <Card sx={{ maxWidth: 420, height: 600 , backgroundColor:"lightGreen" }} key={index}>
+              <Grid item xs={3} key={index}>
+                <Card sx={{ maxWidth: 420, height: 600 , backgroundColor:"lightGreen" }} >
                   <CardMedia
                     component="img"
                     height="320"

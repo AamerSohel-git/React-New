@@ -1,9 +1,11 @@
 import './App.css';
 import AsyncAwait from './Component/useEffect/AsyncAwait';
+import ComponentDidUpdate from './Component/useEffect/ComponentDidUpdate';
 import { DataFetch } from './Component/useEffect/DataFetch';
 import { DataFetchOnMount } from './Component/useEffect/DataFetchOnMount';
 import FetchProducts from './Component/useEffect/FetchProducts';
 import { UsingAxios } from './Component/useEffect/UsingAxios';
+import UseReducerComp from './Component/useReducer/UseReducerComp';
 // import ComplexCount from './Component/useState/ComplexCount';
 // import { Switch } from './Component/useState/Switch';
 // import TextFields from './Component/useState/TextFields';
@@ -30,7 +32,9 @@ function App() {
       {/* <UsingAxios/> */}
       {/* <DataFetchOnMount/> */}
       {/* <FetchProducts/> */}
-      <AsyncAwait/>
+      {/* <AsyncAwait/> */}
+      {/* <ComponentDidUpdate/> */}
+      <UseReducerComp/>
     </div>
   );
 }
