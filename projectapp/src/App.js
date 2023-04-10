@@ -1,4 +1,6 @@
 import './App.css';
+import NavBar from './Component/Routing/NavBar';
+import RoutingComp from './Component/Routing/RoutingComp';
 import AsyncAwait from './Component/useEffect/AsyncAwait';
 import ComponentDidUpdate from './Component/useEffect/ComponentDidUpdate';
 import { DataFetch } from './Component/useEffect/DataFetch';
@@ -34,7 +36,9 @@ function App() {
       {/* <FetchProducts/> */}
       {/* <AsyncAwait/> */}
       {/* <ComponentDidUpdate/> */}
-      <UseReducerComp/>
+      {/* <UseReducerComp/> */}
+      {/* <NavBar/> */}
+      <RoutingComp/>
     </div>
   );
 }
